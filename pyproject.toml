@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "calc"
+version = "0.1.0"
+description = ""
+authors = ["sjchin88"]
+readme = "README.md"
+packages = [
+    {include = "calc", from="src"},
+    {include = "calculator", from="src"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.1.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+calcx = "src.calc.__main__:cli"
