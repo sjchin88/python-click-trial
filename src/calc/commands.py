@@ -6,7 +6,8 @@ from calculator import power_mod
 @click.group()
 def calc_cli():
     pass
-# First click.command() wrap this function to be a cli function by click
+
+# First calc_cli.command() wrap this function to be a command under calc_cli group
 # Second and third wrapper add the options to the command
 # Note the arguments of the function will match the option name specified,
 # click will try to find matching arg parsed and pass to the function

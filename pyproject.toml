@@ -19,4 +19,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-calcx = "src.calc.__main__:cli"
+calcx = "calc.__main__:cli"
