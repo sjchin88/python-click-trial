@@ -9,7 +9,7 @@ from calc.commands import calc_cli
 def cli():
     """ create the cli group
     """
-    pass  # pylint: disable=unnecessary-pass
+    pass
 
 
 # this line add the calc_cli group command to the command line group cli
