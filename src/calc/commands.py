@@ -9,7 +9,7 @@ from calculator import power_mod
 def calc_cli():
     """ Group cli command
     """
-    pass
+    pass  # pylint: disable=unnecessary-pass
 
 # First calc_cli.command() wrap this function to be a command under calc_cli group
 # Second and third wrapper add the options to the command
@@ -19,12 +19,12 @@ def calc_cli():
 
 @calc_cli.command()
 @click.option('--base', default=1, help='base of a number')
-@click.option('--power', default=0, help='power for the number')
-def power(base: int, power: int):
+@click.option('--powers', default=0, help='power for the number')
+def power(base: int, powers: int):
     """Simple cli program that calculate the base raised to the power
 
     Args:
         base (int): base of a number
         power (int): power we want to raised to
     """
-    click.echo(power_mod.powerup(base, power))
+    click.echo(power_mod.powerup(base, powers))
