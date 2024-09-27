@@ -9,7 +9,7 @@ from calculator import power_mod
 def calc_cli():
     """ Group cli command
     """
-    pass
+    pass  # pylint: disable=unnecessary-pass
 
 # First calc_cli.command() wrap this function to be a command under calc_cli group
 # Second and third wrapper add the options to the command
