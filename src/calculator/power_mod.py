@@ -13,3 +13,16 @@ def powerup(base: int, power: int) -> int:
         int: result of calculation
     """
     return base**power
+
+
+def addition(val1: int, val2: int) -> int:
+    """ Simple addition
+
+    Args:
+        val1 (int): value 1
+        val2 (int): value 2
+
+    Returns:
+        int: result of addition
+    """
+    return val1 + val2
