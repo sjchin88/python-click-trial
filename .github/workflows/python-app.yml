@@ -69,7 +69,7 @@ jobs:
         run: poetry install --no-interaction
       - name: Analysing the code with pylint
         run: |
-          poetry run pylint ./src --fail-under=7
+          poetry run pylint ./src --fail-under=8
       - name: Test with poetry
         run: |
           poetry run pytest
