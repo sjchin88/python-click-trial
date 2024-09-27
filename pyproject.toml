@@ -12,6 +12,7 @@ packages = [
 [tool.poetry.dependencies]
 python = "^3.12"
 click = "^8.1.7"
+pytest = "^8.3.3"
 
 
 [build-system]

@@ -1,3 +1,5 @@
+""" main entry point for calc cli
+"""
 import click
 
 from calc.commands import calc_cli
@@ -5,6 +7,8 @@ from calc.commands import calc_cli
 
 @click.group()
 def cli():
+    """ create the cli group
+    """
     pass
 
 
